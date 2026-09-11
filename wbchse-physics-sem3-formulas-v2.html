@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<title>WBCHSE Physics Semester 3 Formula Sheet</title>
+<style>
+@page { size: A4 portrait; margin: 12mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Segoe UI", "Noto Sans Bengali", Kalpurush, sans-serif;
+  font-size: 11pt;
+  line-height: 1.35;
+  color: #111;
+  background: #fff;
+  padding: 10px;
+}
+.sheet {
+  max-width: 190mm;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 16pt;
+  text-align: center;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #000;
+}
+.subtitle {
+  font-size: 10pt;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #333;
+}
+.const-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8.5pt;
+  background: #f5f5f5;
+  padding: 6px 10px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.const-bar span { flex: 1; }
+h2 {
+  font-size: 12pt;
+  background: #e8e8e8;
+  padding: 5px 10px;
+  margin-top: 14px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  font-weight: 700;
+  color: #000;
+  page-break-after: avoid;
+  border-left: 4px solid #444;
+}
+.sub-head {
+  font-weight: 700;
+  font-size: 10.5pt;
+  color: #222;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  display: block;
+}
+.f-block {
+  margin-bottom: 6px;
+  padding-left: 2px;
+}
+.eq {
+  font-family: "Cambria Math", "Times New Roman", serif;
+  font-size: 11.5pt;
+  color: #000;
+  display: block;
+  background: #fafafa;
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin: 2px 0;
+  border-left: 3px solid #666;
+}
+.note {
+  font-size: 9pt;
+  color: #444;
+  display: block;
+  line-height: 1.25;
+  margin-top: 1px;
+  padding-left: 8px;
+}
+.page-break { page-break-before: always; }
+hr {
+  border: none;
+  border-top: 0.5px solid #ccc;
+  margin: 6px 0;
+}
+.two-col {
+  column-count: 2;
+  column-gap: 18px;
+}
+.two-col h2 { column-span: all; }
+.two-col .f-block { break-inside: avoid; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<h1>WBCHSE পদার্থবিদ্যা — সেমিস্টার ৩ (২০২৬-২৭)</h1>
+<div class="subtitle">সম্পূর্ণ সূত্র তালিকা | প্রতিটি সূত্রের নিচে সংকেতের সংজ্ঞা সংক্ষেপে</div>
+
+<div class="const-bar">
+<span>ε₀ = 8.854×10⁻¹² C²N⁻¹m⁻²</span>
+<span>μ₀ = 4π×10⁻⁷ T·m·A⁻¹</span>
+<span>c = 3×10⁸ m/s</span>
+<span>e = 1.6×10⁻¹⁹ C</span>
+<span>mₑ = 9.11×10⁻³¹ kg</span>
+</div>
+
+<!-- UNIT 1 -->
+<h2>১. তড়িৎস্থিতিবিদ্যা (Electrostatics)</h2>
+
+<div class="two-col">
+
+<div class="f-block">
+<span class="eq">F = k q₁q₂ / r² ;  k = 1 / 4πε₀ ≈ 9×10⁹ N·m²·C⁻²</span>
+<span class="note">F: বল, q: বিন্দু আধান, r: দূরত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">E = F / q₀ = k q / r²</span>
+<span class="note">E: তড়িৎ ক্ষেত্র তীব্রতা, q₀: পরীক্ষাণ আধান</span>
+</div>
+
+<div class="f-block">
+<span class="eq">E_net = Σ Eᵢ</span>
+<span class="note">superposition নীতি — বহু আধানের ক্ষেত্র যোগফল</span>
+</div>
+
+<div class="f-block">
+<span class="sub-head">বৈদ্যুতিক দ্বিধ্রুব (Electric Dipole)</span>
+<span class="eq">p⃗ = q·2l⃗ ;  |p| = q·2l</span>
+<span class="note">p: দ্বিধ্রুব আঘাত, 2l: দুই আধানের মধ্যবর্তী দূরত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">E_axial = (1/4πε₀)·2p / r³</span>
+<span class="note">অক্ষ বরাবর বিন্দুতে ক্ষেত্র; r: দ্বিধ্রুব থেকে দূরত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">E_eq = (1/4πε₀)·p / r³</span>
+<span class="note">লম্ব সমদ্বিবাজক বরাবর ক্ষেত্র</span>
+</div>
+
+<div class="f-block">
+<span class="eq">τ = p × E = pE sinθ</span>
+<span class="note">τ: বলাঘূর্ণন, θ: দ্বিধ্রুব ও E-র মধ্যে কোণ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">V = k q / r = (1/4πε₀)·q/r</span>
+<span class="note">V: বিন্দু আধানের তড়িৎ বিভব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">V = (1/4πε₀)·(p cosθ)/r²</span>
+<span class="note">দ্বিধ্রুবের জন্য বিভব; θ: অক্ষের সঙ্গে কোণ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">E = – dV / dr</span>
+<span class="note">ক্ষেত্র ও বিভবের সম্পর্ক</span>
+</div>
+
+<div class="f-block">
+<span class="eq">U = (1/4πε₀)·q₁q₂/r</span>
+<span class="note">U: দুই বিন্দু আধান ব্যবস্থার বিভবশক্তি</span>
+</div>
+
+<div class="f-block">
+<span class="eq">U = – pE cosθ</span>
+<span class="note">দ্বিধ্রুবের tৎশক্তি; θ: দ্বিধ্রুব ও E-র মধ্যে কোণ</span>
+</div>
+
+<div class="f-block">
+<span class="sub-head">Gauss-এর উপপাদ্য ও প্রয়ােগ</span>
+<span class="eq">Φ = ∮ E⃗ · dA⃗ = q_enclosed / ε₀</span>
+<span class="note">Φ: বিদ্যুৎ ফ্লাক্স; A: সমতল ক্ষেত্রফল</span>
+</div>
+
+<div class="f-block">
+<span class="eq">E = λ / (2πε₀ r)</span>
+<span class="note">অসীম দীর্ঘ সরল তারের কারণে; λ: রৈখিক আধান ঘনত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">E = σ / (2ε₀)</span>
+<span class="note">একসমান আধানযুক্ত অসীম সমতল পাত; σ: ক্ষেত্রফল আধান ঘনত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">E_out = (1/4πε₀)·Q/r² ;  E_in = 0</span>
+<span class="note">সম্পৃক্ত গোলকীয় খোলস; r: কেন্দ্র থেকে দূরত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">E_solid,in = (1/4πε₀)·Qr/R³</span>
+<span class="note">একসমান আধানযুক্ত গোলক; R: ব্যাসার্ধ, r≤R: ভেতরের দূরত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="sub-head">ধারকত্ব (Capacitance)</span>
+<span class="eq">C = Q / V</span>
+<span class="note">C: ধারকত্ব, Q: আধান, V: বিভব পার্থক্য</span>
+</div>
+
+<div class="f-block">
+<span class="eq">C = ε₀ A / d</span>
+<span class="note">সমান্তরাল পাত ধারক; A: ক্ষেত্রফল, d: পাতের ব্যবধান</span>
+</div>
+
+<div class="f-block">
+<span class="eq">C' = κ C₀ = κ ε₀ A / d</span>
+<span class="note">পারাবৈদ্যুতিক মাধ্যমে; κ = ε_r: পরাবৈদ্যুতিক ধ্রুবক</span>
+</div>
+
+<div class="f-block">
+<span class="eq">1/C_s = 1/C₁ + 1/C₂ + ...</span>
+<span class="note">শ্রেণী সংযােগে সমতুল্য ধারকত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">C_p = C₁ + C₂ + ...</span>
+<span class="note">সমান্তরাল সংযােগে সমতুল্য ধারকত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">U = ½ C V² = ½ Q V = Q² / (2C)</span>
+<span class="note">U: ধারকে সংগৃহীত শক্তি</span>
+</div>
+
+<div class="f-block">
+<span class="eq">u = ½ ε₀ E²</span>
+<span class="note">u: ক্ষেত্রের শক্তি ঘনত্ব (vacuum)</span>
+</div>
+
+</div>
+
+<div class="page-break"></div>
+
+<!-- UNIT 2 -->
+<h2>২. তড়িৎপ্রবাহবিদ্যা (Current Electricity)</h2>
+
+<div class="two-col">
+
+<div class="f-block">
+<span class="eq">I = dQ / dt = n e A v_d</span>
+<span class="note">I: তড়িপ্রবাহ, n: মুক্ত ইলেক্ট্রনের সংখ্যা ঘনত্ব, v_d: ড্রিফ্ট বেগ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">v_d = e E τ / m = e V τ / (m l)</span>
+<span class="note">v_d: ড্রিফ্ট বেগ, τ: সঞ্চারণ কাল, m: ইলেক্ট্রনের ভর</span>
+</div>
+
+<div class="f-block">
+<span class="eq">V = I R</span>
+<span class="note">Ohm-এর সূত্র; V: বিভব, I: প্রবাহ, R: রোধ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">R = ρ l / A</span>
+<span class="note">ρ: আপেক্ষিক রোধ, l: দৈর্ঘ্য, A: অপরছেদ ক্ষেত্রফল</span>
+</div>
+
+<div class="f-block">
+<span class="eq">σ = 1 / ρ ;  G = 1 / R ;  J = σ E</span>
+<span class="note">σ: চালকত্ব; G: পরিবাহিতা; J: প্রবাহ ঘনত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">ρ_t = ρ₀ [1 + α (t – t₀)]</span>
+<span class="note">α: তাপমাত্রা সহগ, t: তাপমাত্রা</span>
+</div>
+
+<div class="f-block">
+<span class="eq">R_s = R₁ + R₂ + ... ;  1/R_p = 1/R₁ + 1/R₂ + ...</span>
+<span class="note">শ্রেণী ও সমান্তরাল রোধ সংযােগ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">ε = W / q ;  V = ε – I r</span>
+<span class="note">ε: EMF, W: কাজ, q: আধান, V: টার্মিনাল বিভব, r: অভ্যন্তরীণ রোধ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">I = n ε / (R + n r)</span>
+<span class="note">nটি একই কোষ শ্রেণী সংযােগে; R: বহিঃস্থ রোধ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">I = m ε / (R + r / m)</span>
+<span class="note">mটি একই কোষ সমান্তরাল সংযােগে</span>
+</div>
+
+<div class="f-block">
+<span class="eq">I = m n ε / (m R + n r)</span>
+<span class="note">মিশ্র সংযােগ (m সারি × n কোষ প্রতি সারিতে)</span>
+</div>
+
+<div class="f-block">
+<span class="eq">Σ I = 0 ;  Σ ε = Σ I R</span>
+<span class="note">Kirchhoff-এর জংশন নিয়ম ও লুপ নিয়ম</span>
+</div>
+
+<div class="f-block">
+<span class="eq">P/Q = R/S</span>
+<span class="note">Wheatstone bride ভারসাম্য; P,Q,R,S: চারটি বাহু</span>
+</div>
+
+<div class="f-block">
+<span class="eq">P/Q = l / (100 – l)</span>
+<span class="note">মিটার ব্রিজে; l: শূন্য বিন্দুর দৈর্ঘ্য (cm)</span>
+</div>
+
+<div class="f-block">
+<span class="eq">ε₁/ε₂ = l₁/l₂</span>
+<span class="note">পোটেনশিওমিটারে দুই কোষের EMF তুলনা</span>
+</div>
+
+<div class="f-block">
+<span class="eq">r = R (l₁/l₂ – 1)</span>
+<span class="note">পোটেনশিওমিটারে অভ্যন্তরীণ রোধ মাপন; l₁: খোলা, l₂: R সংযেগে</span>
+</div>
+
+</div>
+
+<div class="page-break"></div>
+
+<!-- UNIT 3 -->
+<h2>৩. বিদ্যুৎপ্রবাহের চুম্বকীয় প্রভাব ও চুম্বকত্ব</h2>
+
+<div class="two-col">
+
+<div class="f-block">
+<span class="sub-head">Biot–Savart ও Ampere</span>
+<span class="eq">dB = (μ₀/4π)·I dl sinθ / r²</span>
+<span class="note">Biot–Savart; dl: ক্ষুদ্র তারের দৈর্ঘ্য; r: দূরত্ব; θ: dl ও r-র মধ্যে কোণ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">B = (μ₀I / 4πa)(sin φ₁ + sin φ₂)</span>
+<span class="note">সীমাবদ্ধ সরল তার; a: লম্ব দূরত্ব; φ₁,φ₂: প্রান্তিক কোণ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">B = μ₀ I / (2π a)</span>
+<span class="note">অসীম সরল তারের কারণে</span>
+</div>
+
+<div class="f-block">
+<span class="eq">B = μ₀ I / (2 R)</span>
+<span class="note">বৃত্তাকার প্যাঁচের কেন্দ্রে; R: বৃত্তের ব্যাসার্ধ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">B_axial = μ₀ I R² / [2(R²+x²)^(3/2)]</span>
+<span class="note">বৃত্তাকার প্যাঁচের অক্ষ বরাবর; x: কেন্দ্র থেকে দূরত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">∮ B⃗ · dl⃗ = μ₀ I_enclosed</span>
+<span class="note">Ampere-এর পরিভ্রমণ সূত্র</span>
+</div>
+
+<div class="f-block">
+<span class="eq">B = μ₀ n I ;  n = N / l</span>
+<span class="note">সলেনয়েডের ভেতরে; n: একক দৈর্ঘ্যে প্যাঁচ সংখ্যা</span>
+</div>
+
+<div class="f-block">
+<span class="eq">B = μ₀ N I / (2π r) = μ₀ n I</span>
+<span class="note">টরয়েডের ভেতরে; N: মোট প্যাঁচ, r: মধ্যবর্তী ব্যাসার্ধ</span>
+</div>
+
+<div class="f-block">
+<span class="sub-head">Lorentz বল ও পরিবহন</span>
+<span class="eq">F = q (E⃗ + v⃗ × B⃗)</span>
+<span class="note">Lorentz বল; q: আধান, v: বেগ, B: চুম্বক ক্ষেত্র</span>
+</div>
+
+<div class="f-block">
+<span class="eq">F = q v B sinθ</span>
+<span class="note">শুধু চুম্বক ক্ষেত্রে চলমান আধানের উপর বল; θ: v ও B-র মধ্যে কোণ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">r = m v / (q B)</span>
+<span class="note">লম্ব চুম্বক ক্ষেত্রে বৃত্তাকার পথের ব্যাসার্ধ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">ν = q B / (2π m) = ω / 2π</span>
+<span class="note">Cyclotron কম্পাঙ্ক; ν: কম্পাঙ্ক, ω: কৌণিক কম্পাঙ্ক</span>
+</div>
+
+<div class="f-block">
+<span class="eq">K_max = q² B² R² / (2 m)</span>
+<span class="note">Cyclotronে সর্বোচ্চ গতিশক্তি; R: dees-এর সর্বোচ্চ ব্যাসার্ধ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">F/l = μ₀ I₁ I₂ / (2π d)</span>
+<span class="note">দুই সমান্তরাল তারের মধ্যে বল/দৈর্ঘ্য; d: তাদের মধ্যে দূরত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">τ = N I A B sinθ = M B sinθ</span>
+<span class="note">সমান চুম্বক ক্ষেত্রে ক্যারেন্ট লুপের বলাঘূর্ণন; M=NIA: দ্বিধ্রুব আঘাত</span>
+</div>
+
+<div class="f-block">
+<span class="sub-head">গ্যালভানোমিটার, অ্যামিটার, ভোল্টমিটার</span>
+<span class="eq">I_s = N A B / k ;  V_s = N A B / (k R)</span>
+<span class="note">I_s: প্রবাহ সংবেদনশীলতা; V_s: বিভব সংবেদনশীলতা; k: ঘূর্ণন স্থিরাঙ্ক</span>
+</div>
+
+<div class="f-block">
+<span class="eq">S = I_g R_g / (I – I_g)</span>
+<span class="note">S: শান্ট রোধ; I_g: গ্যালভানোমিটার সর্বোচ্চ প্রবাহ; R_g: গ্যালভানোমিটার রোধ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">R = (V / I_g) – R_g</span>
+<span class="note">ভোল্টমিটার তৈরিতে সংযুক্ত রোধ; V: পরিমাপ্য সর্বোচ্চ বিভব</span>
+</div>
+
+<div class="f-block">
+<span class="sub-head">চুম্বক দ্বিধ্রুব ও ভূ-চুম্বকত্ব</span>
+<span class="eq">μ_l = – e L / (2 m) ;  |μ_l/L| = e / (2 m)</span>
+<span class="note">প্রদক্ষিণে ইলেকট্রনের চুম্বক দ্বিধ্রুব আঘাত; L: কৌণিক ভরবেগ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">B_axial = (μ₀ / 4π)·2M / r³</span>
+<span class="note">দন্ড চুম্বকের অক্ষ বরাবর ক্ষেত্র; M: চুম্বক দ্বিধ্রুব আঘাত</span>
+</div>
+
+<div class="f-block">
+<span class="eq">B_eq = (μ₀ / 4π)·M / r³</span>
+<span class="note">দন্ড চুম্বকের লম্ব সমদ্বিবাজক বরাবর ক্ষেত্র</span>
+</div>
+
+<div class="f-block">
+<span class="eq">τ = M B sinθ ;  U = – M B cosθ</span>
+<span class="note">চুম্বক দ্বিধ্রুবের বলাঘূর্ণন ও tৎশক্তি; θ: M ও B-র মধ্যে কোণ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">I = M / V ;  B = μ₀ (H + I) ;  χ = I / H ;  μ_r = 1 + χ</span>
+<span class="note">I: আরোপণ; H: ক্ষেত্র তীব্রতা; χ: সংবেদনশীলতা; μ_r: আপেক্ষিক চালকত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">B_H = B cos δ ;  B_V = B sin δ ;  tan δ = B_V / B_H</span>
+<span class="note">ভূ-চুম্বক ক্ষেত্র; B_H: অনুভূমিক, B_V: উল্লম্ব; δ: dip কোণ</span>
+</div>
+
+</div>
+
+<div class="page-break"></div>
+
+<!-- UNIT 4 -->
+<h2>৪. তড়িৎচুম্বকীয় প্রেরণ ও প্রত্যাবর্তী তড়িৎ</h2>
+
+<div class="two-col">
+
+<div class="f-block">
+<span class="sub-head">তড়িৎচুম্বকীয় প্রেরণ (EMI)</span>
+<span class="eq">ε = – dΦ / dt = – N dΦ / dt</span>
+<span class="note">Faraday-এর সূত্র; Φ: চুম্বকীয় ফ্লাক্স, N: ফ্যাস সংখ্যা</span>
+</div>
+
+<div class="f-block">
+<span class="eq">ε = B l v</span>
+<span class="note">গতিশীল পরিবাহীর প্রেরিত EMF; l: কার্যকর দৈর্ঘ্য, v: বেগ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">ε = ½ B ω l²</span>
+<span class="note">একপ্রান্তে ঘূর্ণনরত লঘু পরিবাহীর EMF; ω: কৌণিক বেগ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">Φ = L I ;  ε = – L dI / dt</span>
+<span class="note">L: আত্ম-প্রেরকত্ব; ε: আত্মপ্রেরিত EMF</span>
+</div>
+
+<div class="f-block">
+<span class="eq">L = μ₀ N² A / l = μ₀ n² A l</span>
+<span class="note">সলেনয়েডের আত্ম-প্রেরকত্ব; n=N/l: দৈর্ঘ্য অনুপাতিক প্যাঁচ সংখ্যা</span>
+</div>
+
+<div class="f-block">
+<span class="eq">Φ₂ = M I₁ ;  ε₂ = – M dI₁ / dt</span>
+<span class="note">M: পারস্পরিক প্রেরকত্ব; ε₂: দ্বিতীয় কুণ্ডলিতে প্রেরিত EMF</span>
+</div>
+
+<div class="f-block">
+<span class="eq">M = μ₀ N₁ N₂ A / l</span>
+<span class="note">দুই সমাক্ষ সলেনয়েডের পারস্পরিক প্রেরকত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="sub-head">প্রত্যাবর্তী তড়িৎ (AC)</span>
+<span class="eq">V = V₀ sin ωt ;  I = I₀ sin(ωt ± φ)</span>
+<span class="note">V₀,I₀: শিখর মান; ω=2πν: কৌণিক কম্পাঙ্ক; φ: পর্যায় পার্থক্য</span>
+</div>
+
+<div class="f-block">
+<span class="eq">V_rms = V₀ / √2 ;  I_rms = I₀ / √2</span>
+<span class="note">মূল বর্গমধ্য মান (RMS)</span>
+</div>
+
+<div class="f-block">
+<span class="eq">X_L = ω L = 2π f L ;  X_C = 1/(ω C) = 1/(2π f C)</span>
+<span class="note">X_L: প্রেরণিক প্রতিবাধ্য; X_C: ধারক প্রতিবাধ্য; f=ν: কম্পাঙ্ক</span>
+</div>
+
+<div class="f-block">
+<span class="eq">Z = √[ R² + (X_L – X_C)² ]</span>
+<span class="note">LCR শ্রেণী বর্তনীর প্রতিবাধ; Z: impedance</span>
+</div>
+
+<div class="f-block">
+<span class="eq">tan φ = (X_L – X_C) / R</span>
+<span class="note">φ: V ও I-র মধ্যে পর্যায় পার্থক্য কোণ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">I₀ = V₀ / Z ;  I_rms = V_rms / Z</span>
+<span class="note">LCR বর্তনীতে Ohm-এর সদৃশ সূত্র</span>
+</div>
+
+<div class="f-block">
+<span class="eq">ω₀ = 1 / √(LC) ;  f₀ = 1 / (2π √(LC))</span>
+<span class="note">অনুসংহার কম্পাঙ্ক; ω₀: কৌণিক অনুসংহার কম্পাঙ্ক</span>
+</div>
+
+<div class="f-block">
+<span class="eq">Q = ω₀ L / R = 1/(ω₀ C R) = (1/R)√(L/C)</span>
+<span class="note">Q: অনুসংহারের গুণমান (quality factor)</span>
+</div>
+
+<div class="f-block">
+<span class="eq">P_avg = V_rms I_rms cos φ = I²_rms R</span>
+<span class="note">AC বর্তনীতে গড় শক্তি; cos φ: শক্তি গুণক</span>
+</div>
+
+<div class="f-block">
+<span class="eq">cos φ = R / Z = P / (V_rms I_rms)</span>
+<span class="note">শক্তি গুণক; φ: পর্যায় পার্থক্য</span>
+</div>
+
+<div class="f-block">
+<span class="eq">I_wattless = I sin φ = I (X / Z)</span>
+<span class="note">শক্তিহীন প্রবাহ; X = X_L – X_C</span>
+</div>
+
+<div class="f-block">
+<span class="eq">ω = 1 / √(LC)</span>
+<span class="note">LC দোলকের আদর্শ কম্পাঙ্ক (qualitative)</span>
+</div>
+
+<div class="f-block">
+<span class="sub-head">ট্রান্সফরমার</span>
+<span class="eq">V_s / V_p = N_s / N_p = I_p / I_s  (আদর্শ)</span>
+<span class="note">V_s,V_p: মাধ্যমিক/প্রাথমিক বিভব; N_s,N_p: প্যাঁচ; I_s,I_p: প্রবাহ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">η = (V_s I_s) / (V_p I_p)</span>
+<span class="note">η: দক্ষতা; আদর্শ ট্রান্সফরমারে η ≈ 1</span>
+</div>
+
+</div>
+
+<div class="page-break"></div>
+
+<!-- UNIT 5 -->
+<h2>৫. তড়িৎচুম্বকীয় তরঙ্গ (Electromagnetic Waves)</h2>
+
+<div class="two-col">
+
+<div class="f-block">
+<span class="eq">I_d = ε₀ dΦ_E / dt</span>
+<span class="note">I_d: স্থানপরিবর্তন প্রবাহ; Φ_E: বিদ্যুৎ ফ্লাক্স</span>
+</div>
+
+<div class="f-block">
+<span class="eq">∮ B⃗ · dl⃗ = μ₀ I_c + μ₀ ε₀ dΦ_E / dt</span>
+<span class="note">Ampere–Maxwell-এর সূত্র; I_c: পরিবাহন প্রবাহ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">c = 1 / √(μ₀ ε₀) ≈ 3×10⁸ m/s</span>
+<span class="note">শূন্য স্থানে EM তরঙ্গের বেগ</span>
+</div>
+
+<div class="f-block">
+<span class="eq">v = 1 / √(μ ε) = c / n ;  n = √(μ_r ε_r)</span>
+<span class="note">মাধ্যমে বেগ; n: প্রতিসরাঙ্ক; μ_r: আপেক্ষিক চুম্বকধর্মী ধ্রুবক</span>
+</div>
+
+<div class="f-block">
+<span class="eq">c = ν λ ;  E₀ / c = B₀</span>
+<span class="note">ν: কম্পাঙ্ক; λ: তরঙ্গদৈর্ঘ্য; E₀,B₀: তড়িৎ ও চুম্বক শিখর ক্ষেত্র</span>
+</div>
+
+<div class="f-block">
+<span class="eq">u = ½ ε₀ E² + B²/(2μ₀) = ε₀ E²_avg</span>
+<span class="note">u: ক্ষেত্রের শক্তি ঘনত্ব</span>
+</div>
+
+<div class="f-block">
+<span class="eq">I = u_avg · c = ½ ε₀ E₀² c</span>
+<span class="note">I: তীব্রতা (intensity) = শক্তি প্রবাহ / ক্ষেত্রফল</span>
+</div>
+
+<div class="f-block">
+<span class="eq">p = U / c ;  P = I/c (শোষণে);  P = 2I/c (প্রতিফলনে)</span>
+<span class="note">p: ভরবেগ; P: চাপ; U: শক্তি, I: তীব্রতা</span>
+</div>
+
+<div class="f-block">
+<span class="note" style="font-size:9.5pt;"><b>EM স্পেকট্রাম (কম্পাঙ্ক বাড়লে শক্তি বাড়ে):</b><br>রেডিও (বৃহত্তম λ) → মাইক্রোওয়েভ → IR → দৃশ্যমান → UV → X-ray → গামা (ক্ষুদ্রতম λ)</span>
+</div>
+
+</div>
+
+<div style="text-align:center; margin-top:20px; font-size:9pt; color:#555;">
+— শেষ —<br>
+WBCHSE Semester 3 (২০২৬-২৭) | পদার্থবিদ্যা সূত্র তালিকা
+</div>
+
+</div>
+</body>
+</html>
