@@ -1,427 +1,384 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WBCHSE Class 12 Physics — Semester 3 Formula Sheet</title>
-<style>
-  :root{
-    --ink:#17324d;
-    --muted:#607386;
-    --line:#d9e2ea;
-    --paper:#ffffff;
-    --card:#f6f8fa;
-    --accent:#173f68;
-    --accent2:#b51f2e;
-    --bg:#eef2f5;
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:#17212b;
-    font-family:"Noto Sans Bengali","Nirmala UI","Segoe UI",Arial,sans-serif;
-    line-height:1.35;
-  }
-  .page{
-    max-width:1180px;
-    margin:24px auto;
-    background:var(--paper);
-    padding:28px 34px 34px;
-    box-shadow:0 8px 28px rgba(20,40,60,.10);
-  }
-  header{text-align:center}
-  h1{
-    margin:0;
-    color:var(--ink);
-    font-size:27px;
-    font-weight:800;
-    letter-spacing:.2px;
-  }
-  .subtitle{
-    margin:4px 0 14px;
-    color:var(--muted);
-    font-size:13px;
-  }
-  .redline{height:2px;background:var(--accent2);margin:0 0 18px}
-  .grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:16px 18px;
-    align-items:start;
-  }
-  .section{
-    background:var(--card);
-    border-left:4px solid var(--accent);
-    border-radius:3px;
-    padding:12px 16px 14px;
-    break-inside:avoid;
-  }
-  .section h2{
-    margin:0 0 8px;
-    padding-bottom:6px;
-    border-bottom:1px solid var(--line);
-    color:var(--accent);
-    font-size:18px;
-    font-weight:800;
-  }
-  .item{
-    margin:0 0 8px;
-    break-inside:avoid;
-  }
-  .item:last-child{margin-bottom:0}
-  .label{
-    color:#1b4d76;
-    font-size:14px;
-    font-weight:800;
-    margin-bottom:1px;
-  }
-  .formula{
-    background:#fff;
-    border:1px solid #e4e9ee;
-    border-radius:4px;
-    padding:4px 8px;
-    color:#182532;
-    font-size:15px;
-    overflow-x:auto;
-  }
-  .note{
-    color:#71808d;
-    font-size:11px;
-    margin-top:1px;
-  }
-  .constants{
-    margin-top:16px;
-    padding:10px 13px;
-    border-top:1px solid var(--line);
-    color:#536575;
-    font-size:12px;
-  }
-  .constants b{color:var(--ink)}
-  footer{
-    margin-top:8px;
-    text-align:center;
-    color:#7b8791;
-    font-size:10px;
-  }
-  mjx-container{margin:0 !important}
-  @media(max-width:800px){
-    .page{margin:0;padding:20px 16px;box-shadow:none}
-    .grid{grid-template-columns:1fr}
-    h1{font-size:23px}
-  }
-  @media print{
-    @page{size:A4;margin:9mm}
-    body{background:#fff}
-    .page{max-width:none;margin:0;padding:0;box-shadow:none}
-    .grid{gap:9px 12px}
-    .section{padding:8px 10px 9px}
-    .section h2{font-size:15px;margin-bottom:5px;padding-bottom:4px}
-    .label{font-size:11px}
-    .formula{font-size:12px;padding:2px 5px}
-    .note{font-size:8px}
-    .item{margin-bottom:5px}
-    .constants{margin-top:8px;font-size:9px;padding:5px 8px}
-    footer{font-size:8px}
-  }
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WBCHSE দ্বাদশ শ্রেণি - পদার্থবিদ্যা | সূত্রপত্র | সেমিস্টার-৩ (২০২৬-২৭)</title>
 <script>
-window.MathJax = {
-  tex: {inlineMath:[['\\(','\\)'],['$','$']], displayMath:[['\\[','\\]'],['$$','$$']]},
-  svg: {fontCache:'global'}
-};
+window.MathJax = { tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] }, svg: {fontCache:'global'} };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+@page { size: A4; margin: 12mm; }
+:root{
+  --ink:#14243a; --blue:#15558c; --muted:#70829a; --line:#cfd8e3;
+  --pale:#eef3f8; --warm:#fff4dd; --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#eef1f5;color:var(--ink);font-family:"Noto Sans Bengali","Nirmala UI","Segoe UI",sans-serif;}
+.toolbar{position:sticky;top:0;z-index:20;background:#14243a;color:#fff;padding:10px 16px;display:flex;gap:10px;align-items:center;justify-content:space-between;box-shadow:0 2px 12px #0002}
+.toolbar .meta{font-size:13px;opacity:.9}
+.toolbar button{border:0;border-radius:8px;padding:8px 12px;cursor:pointer;background:#fff;color:#14243a;font-weight:700;flex-shrink:0}
+
+/* --- Screen layout: fluid, fills available width, no forced page height --- */
+.sheet{width:100%;max-width:1600px;margin:18px auto;padding:0 18px}
+.page{background:var(--white);padding:16px 22px 20px;box-shadow:0 4px 18px #00000012;border-radius:10px;position:relative;margin-bottom:18px}
+.page:last-child{margin-bottom:0}
+
+.running,footer{display:none} /* per-page running header / page-number footer: print only, just clutter on screen */
+
+.hero{text-align:center;margin:4px 0 10px}
+.hero h1{margin:0;font-family:"Noto Serif Bengali",serif;font-size:clamp(22px,3vw,31px);line-height:1.25;font-weight:900;letter-spacing:-.4px}
+.hero h2{margin:0;color:var(--blue);font-family:"Noto Serif Bengali",serif;font-size:clamp(17px,2.2vw,22px)}
+.hero .sub{margin-top:2px;font-size:14px;color:#202d3e}
+.note{background:var(--warm);border-left:4px solid #e6c16a;padding:7px 9px;margin:10px 0 12px;font-size:12.5px;line-height:1.45;break-inside:avoid}
+
+/* Multi-column flow: browser auto-picks the number of columns that fit,
+   so a wide desktop gets 3-4 columns and a phone naturally collapses to 1 -
+   this is what actually fills desktop width without wasting it. */
+.grid{column-width:300px;column-gap:22px;column-fill:balance}
+.grid>div{display:contents}
+.quick{column-width:260px;column-gap:22px;margin-top:14px}
+.quick>div{display:contents}
+
+.section{margin-bottom:13px;break-inside:avoid-column}
+.section h3{font-family:"Noto Serif Bengali",serif;font-size:17px;line-height:1.25;margin:0 0 6px;font-weight:900}
+.chapter{font-family:"Noto Serif Bengali",serif;font-size:23px;color:var(--blue);margin:0 0 9px;border-bottom:2px solid #d4dde8;padding-bottom:4px;font-weight:900;break-after:avoid-column}
+.formula{margin:7px 0;text-align:center;font-size:17px;line-height:1.3;max-width:100%;overflow-x:auto}
+.formula.hot{background:var(--pale);border-radius:3px;padding:5px 7px;display:block;width:fit-content;max-width:100%;margin:8px auto}
+.small{font-size:11.5px;color:var(--muted);line-height:1.45;margin:4px 0}
+.rule{height:1px;background:#dae1e9;margin:8px 0}
+.compact .formula{font-size:16px;margin:6px 0}
+.compact .section{margin-bottom:11px}
+.twoline{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.table{width:100%;border-collapse:collapse;font-size:11.5px}
+.table th,.table td{border-bottom:1px solid var(--line);padding:5px 6px;vertical-align:top}
+.table th{background:#f4f7fa;text-align:left;font-weight:800}
+.quick .formula{margin:11px 0;font-size:18px}
+.print-only{display:none}
+
+@media(max-width:640px){
+  .sheet{padding:0 10px;margin:12px auto}
+  .page{padding:14px 14px 16px;border-radius:8px}
+  .grid,.quick{column-width:auto}
+  .formula{font-size:15.5px}
+  .chapter{font-size:20px}
+}
+
+@media print{
+  body{background:#fff}
+  .toolbar{display:none}
+  .sheet{width:auto;max-width:none;margin:0;padding:0}
+  .page{box-shadow:none;border-radius:0;margin:0;min-height:273mm;padding:9mm 10mm 11mm;page-break-after:always;overflow:hidden}
+  .page:last-child{page-break-after:auto}
+  .running{display:flex}
+  footer{display:block;position:absolute;bottom:5mm;left:10mm;right:10mm;text-align:center;color:#73839a;font-size:12px}
+  .grid,.quick{column-width:auto;column-count:2}
+  .print-only{display:block}
+}
+</style>
 </head>
-
 <body>
-<main class="page">
-<header>
-  <h1>WBCHSE Class 12 Physics (Semester 3)</h1>
-  <div class="subtitle">Complete Formula Sheet • 2026–27 Syllabus • Quick Revision</div>
-  <div class="redline"></div>
-</header>
+<div class="toolbar">
+  <div><strong>WBCHSE Physics - Semester 3 Formula Sheet</strong><div class="meta">Book-style HTML edition</div></div>
+  <button onclick="window.print()">Print / Save as PDF</button>
+</div>
+<div class="sheet">
 
-<section class="grid">
+<section class="page">
+  <div class="running"><span>WBCHSE দ্বাদশ শ্রেণি | পদার্থবিদ্যা</span><span>সেমিস্টার-৩ | ২০২৬-২৭</span></div>
+  <div class="hero">
+    <h1>WBCHSE দ্বাদশ শ্রেণি - পদার্থবিদ্যা</h1>
+    <h2>সূত্রপত্র | সেমিস্টার-৩ (২০২৬-২৭)</h2>
+    <div class="sub">স্থির তড়িৎ | তড়িৎ প্রবাহ | চৌম্বক ক্রিয়া ও চুম্বকত্ব | EMI ও AC | তড়িৎচৌম্বক তরঙ্গ</div>
+  </div>
+  <div class="note"><b>নির্দেশ:</b> মোটা/হাইলাইট করা সূত্রগুলি আগে মুখস্থ করো। ছোট লেখায় প্রতীকের অর্থ, শর্ত বা সূত্রের প্রয়োগের সীমা দেওয়া আছে।</div>
 
-  <!-- 1 Electrostatics -->
-  <article class="section">
-    <h2>১. স্থির তড়িৎ (Electrostatics)</h2>
-
-    <div class="item">
-      <div class="label">আধানের কোয়ান্টাইজেশন</div>
-      <div class="formula">\(q=ne\)</div>
-      <div class="note">\(n\) = পূর্ণসংখ্যা, \(e\) = elementary charge</div>
-    </div>
-
-    <div class="item">
-      <div class="label">কুলম্বের সূত্র</div>
-      <div class="formula">\(F=\dfrac{1}{4\pi\varepsilon_0}\dfrac{|q_1q_2|}{r^2}\)</div>
-      <div class="note">দিক: দুই আধানকে যোগকারী সরলরেখা বরাবর</div>
-    </div>
-
-    <div class="item">
-      <div class="label">তড়িৎ প্রাবল্য — বিন্দু আধান</div>
-      <div class="formula">\(E=\dfrac{1}{4\pi\varepsilon_0}\dfrac{|q|}{r^2}\)</div>
-      <div class="note">ভেক্টর সমস্যায় দিকও বিবেচনা করতে হবে</div>
-    </div>
-
-    <div class="item">
-      <div class="label">তড়িৎ দ্বিমেরু মুহূর্ত</div>
-      <div class="formula">\(p=q(2a)\)</div>
-      <div class="note">\(2a\) = দুই আধানের দূরত্ব</div>
-    </div>
-
-    <div class="item">
-      <div class="label">দ্বিমেরু — প্রাবল্য</div>
-      <div class="formula">
-        অক্ষীয়: \(\displaystyle E_{\rm ax}=\dfrac{1}{4\pi\varepsilon_0}\dfrac{2pr}{(r^2-a^2)^2}\)
-        <br>
-        সমদ্বিখণ্ডকীয়: \(\displaystyle E_{\rm eq}=\dfrac{1}{4\pi\varepsilon_0}\dfrac{p}{(r^2+a^2)^{3/2}}\)
+  <div class="grid">
+    <div>
+      <h2 class="chapter">১. স্থির তড়িৎ</h2>
+      <div class="section">
+        <h3>মৌলিক ধ্রুবক</h3>
+        <div class="formula hot">\[k=\frac{1}{4\pi\varepsilon_0}=9\times10^9\;\mathrm{N\,m^2\,C^{-2}}\]</div>
+        <div class="formula">\[\varepsilon_0=8.854\times10^{-12}\;\mathrm{C^2N^{-1}m^{-2}},\qquad \mu_0=4\pi\times10^{-7}\;\mathrm{T\,m\,A^{-1}}\]</div>
+        <div class="formula">\[e=1.6\times10^{-19}\;\mathrm{C}\]</div>
       </div>
-      <div class="note">দূরবর্তী বিন্দুতে \(r\gg a\) হলে \(E_{\rm ax}\approx\dfrac{1}{4\pi\varepsilon_0}\dfrac{2p}{r^3}\), \(E_{\rm eq}\approx\dfrac{1}{4\pi\varepsilon_0}\dfrac{p}{r^3}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">সুষম তড়িৎ ক্ষেত্রে টর্ক</div>
-      <div class="formula">\(\tau=pE\sin\theta\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">গাউসের উপপাদ্য</div>
-      <div class="formula">\(\displaystyle \Phi_E=\oint \vec E\cdot d\vec A=\dfrac{q_{\rm enc}}{\varepsilon_0}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">অসীম দীর্ঘ আধান ও পাত</div>
-      <div class="formula">
-        রেখা: \(\displaystyle E=\dfrac{\lambda}{2\pi\varepsilon_0 r}\)
-        &nbsp;&nbsp; পাত: \(\displaystyle E=\dfrac{\sigma}{2\varepsilon_0}\)
+      <div class="section">
+        <h3>আধান ও কুলম্বের সূত্র</h3>
+        <div class="formula hot">\[q=\pm ne\]</div>
+        <div class="small">\(n\) = মৌলিক আধানের সংখ্যা</div>
+        <div class="formula hot">\[F=k\frac{|q_1q_2|}{r^2}=\frac{1}{4\pi\varepsilon}\frac{|q_1q_2|}{r^2}\]</div>
+        <div class="small">মাধ্যমে \(\varepsilon=\kappa\varepsilon_0\)।</div>
+      </div>
+      <div class="section">
+        <h3>বৈদ্যুতিক ক্ষেত্র</h3>
+        <div class="formula hot">\[\vec E=\frac{\vec F}{q_0},\qquad E=\frac{k|q|}{r^2}\]</div>
+        <div class="small">ধনাত্মক আধানের ক্ষেত্র বহির্মুখী; ঋণাত্মকের অন্তর্মুখী।</div>
+      </div>
+      <div class="section">
+        <h3>গাউসের সূত্র ও তড়িৎ ফ্লাক্স</h3>
+        <div class="formula hot">\[\Phi_E=\oint \vec E\cdot d\vec S=\frac{q_{\mathrm{enc}}}{\varepsilon_0}\]</div>
+        <div class="formula">\[E=\frac{\lambda}{2\pi\varepsilon_0r}\qquad E=\frac{\sigma}{2\varepsilon_0}\]</div>
+        <div class="formula">\[E=\frac{k|q|}{r^2}\;(r>R),\qquad E=0\;(r<R)\]</div>
+      </div>
+      <div class="section">
+        <h3>তড়িৎ দ্বিধ্রুব</h3>
+        <div class="formula">\[\vec p=q(2\vec a),\qquad p=2qa\]</div>
+        <div class="formula hot">\[E_a=\frac{2kp}{r^3},\qquad E_e=\frac{kp}{r^3}\]</div>
+        <div class="small">দূরবর্তী বিন্দুর জন্য। বিষুবীয় ক্ষেত্রে ক্ষেত্র \(\vec p\)-এর বিপরীত দিকে।</div>
+        <div class="formula">\[\tau=pE\sin\theta,\qquad U=-pE\cos\theta=-\vec p\cdot\vec E\]</div>
+      </div>
+      <div class="section">
+        <h3>বৈদ্যুতিক বিভব ও বিভবশক্তি</h3>
+        <div class="formula hot">\[V=\frac{W}{q_0},\qquad V=\frac{kq}{r}\]</div>
+        <div class="formula">\[\vec E=-\nabla V,\qquad E=-\frac{dV}{dr}\]</div>
+        <div class="formula">\[V_d=\frac{kp\cos\theta}{r^2},\qquad U=\frac{kq_1q_2}{r}\]</div>
       </div>
     </div>
 
-    <div class="item">
-      <div class="label">তড়িৎ বিভব — বিন্দু আধান</div>
-      <div class="formula">\(\displaystyle V=\dfrac{1}{4\pi\varepsilon_0}\dfrac{q}{r}\)</div>
-    </div>
+    <div>
+      <h2 class="chapter">ধারক</h2>
+      <div class="section">
+        <div class="formula hot">\[C=\frac{Q}{V},\qquad C=\frac{\varepsilon_0A}{d}\]</div>
+        <div class="formula hot">\[C=\frac{\kappa\varepsilon_0A}{d}\]</div>
+        <div class="formula hot">\[U=\frac12CV^2=\frac{Q^2}{2C}=\frac12QV\]</div>
+        <div class="formula">\[u=\frac12\varepsilon E^2\]</div>
+        <div class="formula">\[\frac1{C_{eq}}=\sum_i\frac1{C_i},\qquad C_{eq}=\sum_i C_i\]</div>
+        <div class="formula">\[C_s=4\pi\varepsilon_0R\]</div>
+        <div class="formula">\[C_{sp}=4\pi\varepsilon_0\frac{R_1R_2}{R_2-R_1}\]</div>
+      </div>
+      <div class="note"><b>ডাইইলেকট্রিক:</b> ব্যাটারি বিচ্ছিন্ন → \(Q\) ধ্রুব ⇒ \(V=V_0/\kappa,\;E=E_0/\kappa,\;U=U_0/\kappa\)।<br>ব্যাটারি যুক্ত → \(V\) ধ্রুব ⇒ \(Q=\kappa Q_0,\;U=\kappa U_0\); আদর্শ সমান্তরাল পাত-এ \(E\) অপরিবর্তিত।</div>
 
-    <div class="item">
-      <div class="label">প্রাবল্য ও বিভবের সম্পর্ক</div>
-      <div class="formula">\(\displaystyle E=-\dfrac{dV}{dr}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">সমান্তরাল পাত ধারক</div>
-      <div class="formula">\(\displaystyle C=\dfrac{\kappa\varepsilon_0 A}{d}\)</div>
-      <div class="note">পূর্ণভাবে dielectric ভরলে</div>
-    </div>
-
-    <div class="item">
-      <div class="label">সঞ্চিত শক্তি ও শক্তি ঘনত্ব</div>
-      <div class="formula">
-        \(\displaystyle U=\frac12CV^2=\frac12QV=\frac{Q^2}{2C}\)
-        <br>
-        \(\displaystyle u=\frac12\varepsilon_0E^2\)
+      <h2 class="chapter">২. তড়িৎ প্রবাহ</h2>
+      <div class="section">
+        <h3>প্রবাহ ও ড্রিফট বেগ</h3>
+        <div class="formula hot">\[I=\frac{\Delta Q}{\Delta t}=neAv_d\]</div>
+        <div class="formula">\[v_d=\frac{eE\tau}{m}=\frac{eV\tau}{m\ell}=\frac{I}{neA}\]</div>
+        <div class="small">\(n\) = মুক্ত ইলেক্ট্রনের সংখ্যা-ঘনত্ব; \(A\) = প্রস্থচ্ছেদ; \(\tau\) = শিথিলন সময়।</div>
+      </div>
+      <div class="section">
+        <h3>ওহমের সূত্র, রোধ ও তাপমাত্রা</h3>
+        <div class="formula hot">\[V=IR,\qquad R=\rho\frac{\ell}{A},\qquad \rho=\frac{m}{ne^2\tau}\]</div>
+        <div class="formula">\[R=R_0[1+\alpha(T-T_0)]\]</div>
+        <div class="small">ছোট তাপমাত্রা সীমার জন্য।</div>
+      </div>
+      <div class="section">
+        <h3>রোধের সংযোগ</h3>
+        <div class="formula">\[R_s=R_1+R_2+\cdots\]</div>
+        <div class="formula">\[\frac1{R_p}=\frac1{R_1}+\frac1{R_2}+\cdots\]</div>
       </div>
     </div>
-  </article>
-
-  <!-- 2 Current Electricity -->
-  <article class="section">
-    <h2>২. প্রবাহী তড়িৎ (Current Electricity)</h2>
-
-    <div class="item">
-      <div class="label">তড়িৎ প্রবাহ ও ড্রিফট বেগ</div>
-      <div class="formula">\(\displaystyle I=neAv_d,\qquad v_d=\dfrac{eE\tau}{m}\)</div>
-      <div class="note">\(n\)=মুক্ত ইলেকট্রনের ঘনত্ব, \(A\)=ক্ষেত্রফল</div>
-    </div>
-
-    <div class="item">
-      <div class="label">ওহমের সূত্র ও রোধ</div>
-      <div class="formula">\(\displaystyle V=IR,\qquad R=\rho\dfrac{l}{A}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">প্রবাহ ঘনত্ব</div>
-      <div class="formula">\(\displaystyle J=\dfrac{I}{A}=\sigma E\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">উষ্ণতার সাথে রোধ</div>
-      <div class="formula">\(\displaystyle R=R_0(1+\alpha\Delta T)\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">তড়িৎচালক বল (EMF) ও টার্মিনাল বিভব</div>
-      <div class="formula">\(\displaystyle V=\mathcal E-Ir,\qquad I=\dfrac{\mathcal E}{R+r}\)</div>
-      <div class="note">\(\mathcal E\)=EMF, \(r\)=অভ্যন্তরীণ রোধ</div>
-    </div>
-
-    <div class="item">
-      <div class="label">উইটস্টোন ব্রিজ (balanced)</div>
-      <div class="formula">\(\displaystyle \dfrac{P}{Q}=\dfrac{R}{S}\)</div>
-      <div class="note">ব্যালান্স অবস্থায় galvanometer current = 0</div>
-    </div>
-
-    <div class="item">
-      <div class="label">তড়িৎ ক্ষমতা</div>
-      <div class="formula">\(\displaystyle P=VI=I^2R=\dfrac{V^2}{R}\)</div>
-    </div>
-  </article>
-
-  <!-- 3 Magnetism -->
-  <article class="section">
-    <h2>৩. চৌম্বক ক্রিয়া ও চুম্বকত্ব (Magnetism)</h2>
-
-    <div class="item">
-      <div class="label">বায়ো–স্যাভার্ট সূত্র</div>
-      <div class="formula">\(\displaystyle dB=\dfrac{\mu_0}{4\pi}\dfrac{I\,dl\sin\theta}{r^2}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">দীর্ঘ সরল তারের কাছে</div>
-      <div class="formula">\(\displaystyle B=\dfrac{\mu_0 I}{2\pi r}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">বৃত্তাকার লুপের কেন্দ্রে</div>
-      <div class="formula">\(\displaystyle B=\dfrac{\mu_0 I}{2r}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">দীর্ঘ solenoid-এর ভিতরে</div>
-      <div class="formula">\(\displaystyle B=\mu_0 nI\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">লরেঞ্জ বল</div>
-      <div class="formula">\(\displaystyle \vec F=q(\vec v\times\vec B),\qquad F=qvB\sin\theta\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">চৌম্বক ক্ষেত্রে আধানযুক্ত কণার বেগ</div>
-      <div class="formula">\(\displaystyle r=\dfrac{mv}{qB}\)</div>
-      <div class="note">\(v\perp B\) হলে</div>
-    </div>
-
-    <div class="item">
-      <div class="label">তারের উপর বল</div>
-      <div class="formula">\(\displaystyle F=BIl\sin\theta\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">সমান্তরাল তড়িৎবাহী তারের মধ্যে বল</div>
-      <div class="formula">\(\displaystyle \dfrac{F}{l}=\dfrac{\mu_0I_1I_2}{2\pi d}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">চৌম্বক দ্বিমেরু মুহূর্ত ও টর্ক</div>
-      <div class="formula">\(\displaystyle m=NIA,\qquad \tau=mB\sin\theta\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">ভূ-চৌম্বক ক্ষেত্র (tangent law)</div>
-      <div class="formula">\(\displaystyle \tan\theta=\dfrac{B}{B_H}\)</div>
-      <div class="note">\(B_H\)=horizontal component</div>
-    </div>
-  </article>
-
-  <!-- 4 EMI & AC -->
-  <article class="section">
-    <h2>৪. আবেশ ও পরিবর্তী প্রবাহ (EMI &amp; AC)</h2>
-
-    <div class="item">
-      <div class="label">চৌম্বক ফ্লাক্স ও ফ্যারাডের সূত্র</div>
-      <div class="formula">\(\displaystyle \Phi_B=BA\cos\theta,\qquad \mathcal E=-N\dfrac{d\Phi_B}{dt}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">গতিজনিত তড়িৎচালক বল</div>
-      <div class="formula">\(\displaystyle \mathcal E=Blv\)</div>
-      <div class="note">\(l\perp v\perp B\) হলে</div>
-    </div>
-
-    <div class="item">
-      <div class="label">স্ব-আবেশাঙ্ক ও সঞ্চিত শক্তি</div>
-      <div class="formula">\(\displaystyle \mathcal E=-L\dfrac{di}{dt},\qquad U=\frac12LI^2\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">পারস্পরিক আবেশাঙ্ক</div>
-      <div class="formula">\(\displaystyle \mathcal E_2=-M\dfrac{di_1}{dt}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">AC-এর RMS মান</div>
-      <div class="formula">\(\displaystyle I_{\rm rms}=\dfrac{I_0}{\sqrt2},\qquad V_{\rm rms}=\dfrac{V_0}{\sqrt2}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">প্রতিবন্ধকতা (Reactance)</div>
-      <div class="formula">\(\displaystyle X_L=\omega L,\qquad X_C=\dfrac{1}{\omega C}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">LCR প্রতিবন্ধকতা (Impedance)</div>
-      <div class="formula">\(\displaystyle Z=\sqrt{R^2+(X_L-X_C)^2}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">অনুনাদ কম্পাঙ্ক</div>
-      <div class="formula">\(\displaystyle f_0=\dfrac{1}{2\pi\sqrt{LC}}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">AC ক্ষমতা ও পাওয়ার ফ্যাক্টর</div>
-      <div class="formula">\(\displaystyle P=V_{\rm rms}I_{\rm rms}\cos\phi,\qquad \cos\phi=\dfrac{R}{Z}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">আদর্শ ট্রান্সফরমার</div>
-      <div class="formula">\(\displaystyle \dfrac{V_s}{V_p}=\dfrac{N_s}{N_p}\)</div>
-    </div>
-  </article>
-
-  <!-- 5 EM Waves -->
-  <article class="section">
-    <h2>৫. তড়িৎচৌম্বক তরঙ্গ (EM Waves)</h2>
-
-    <div class="item">
-      <div class="label">সরণ প্রবাহ (Displacement current)</div>
-      <div class="formula">\(\displaystyle I_d=\varepsilon_0\dfrac{d\Phi_E}{dt}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">ম্যাক্সওয়েল–অ্যাম্পিয়ার সূত্র</div>
-      <div class="formula">\(\displaystyle \oint\vec B\cdot d\vec l=\mu_0(I_c+I_d)\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">আলোর বেগ (শূন্যস্থানে)</div>
-      <div class="formula">\(\displaystyle c=\dfrac{1}{\sqrt{\mu_0\varepsilon_0}}\approx3\times10^8\ {\rm m\,s^{-1}}\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">তড়িৎ ও চৌম্বক ক্ষেত্রের সম্পর্ক</div>
-      <div class="formula">\(\displaystyle E_0=cB_0\)</div>
-    </div>
-
-    <div class="item">
-      <div class="label">তরঙ্গের তীব্রতা</div>
-      <div class="formula">\(\displaystyle I=\frac12c\varepsilon_0E_0^2=\dfrac{cB_0^2}{2\mu_0}\)</div>
-    </div>
-  </article>
-
+  </div>
+  <footer>পৃষ্ঠা ১</footer>
 </section>
 
-<div class="constants">
-  <b>প্রয়োজনীয় ধ্রুবক:</b>
-  \(\displaystyle \varepsilon_0=8.85\times10^{-12}\ {\rm F\,m^{-1}}\),
-  \(\displaystyle \mu_0=4\pi\times10^{-7}\ {\rm H\,m^{-1}}\),
-  \(\displaystyle e=1.6\times10^{-19}\ {\rm C}\).
-</div>
+<section class="page">
+  <div class="running"><span>WBCHSE দ্বাদশ শ্রেণি | পদার্থবিদ্যা</span><span>সেমিস্টার-৩ | ২০২৬-২৭</span></div>
+  <div class="grid compact">
+    <div>
+      <div class="section"><h3>সেল ও ব্যাটারি</h3>
+        <div class="formula hot">\[I=\frac{n\varepsilon}{R+nr}\]</div>
+        <div class="formula">\[I=\frac{\varepsilon}{R+r/m}\]</div>
+        <div class="formula">\[I=\frac{n\varepsilon}{R+nr/m}\]</div>
+        <div class="formula">\[\varepsilon_{eq}=\frac{\varepsilon_1r_2+\varepsilon_2r_1}{r_1+r_2},\qquad r_{eq}=\frac{r_1r_2}{r_1+r_2}\]</div>
+        <div class="formula hot">\[V=\varepsilon-Ir\]</div>
+      </div>
+      <div class="section"><h3>কির্শফ ও সেতু</h3>
+        <div class="formula hot">\[\sum I=0\]</div>
+        <div class="formula hot">\[\sum\varepsilon-\sum IR=0\]</div>
+      </div>
+      <div class="section"><h2 class="chapter">৩. চৌম্বক ক্রিয়া ও চুম্বকত্ব</h2>
+        <h3>বায়ো-সাভার্টের সূত্র ও ক্ষেত্র</h3>
+        <div class="formula hot">\[d\vec B=\frac{\mu_0}{4\pi}\frac{I(d\vec\ell\times\hat r)}{r^2}\]</div>
+        <div class="formula hot">\[B_w=\frac{\mu_0I}{2\pi r}\]</div>
+        <div class="formula">\[B_l=\frac{\mu_0I}{2R},\qquad B_N=\frac{\mu_0NI}{2R}\]</div>
+        <div class="formula hot">\[B_s=\mu_0nI=\frac{\mu_0NI}{\ell}\]</div>
+        <div class="formula">\[\oint\vec B\cdot d\vec\ell=\mu_0I_{enc}\]</div>
+      </div>
+      <div class="section"><h3>লরেঞ্জ বল ও আধানিত কণা</h3>
+        <div class="formula hot">\[\vec F=q(\vec E+\vec v\times\vec B),\qquad F_B=|q|vB\sin\theta\]</div>
+        <div class="formula">\[r=\frac{mv}{|q|B}\qquad(\theta=90^\circ)\]</div>
+        <div class="formula">\[T=\frac{2\pi m}{|q|B},\qquad \nu=\frac{|q|B}{2\pi m}\]</div>
+        <div class="small">অ-আপেক্ষিকতাবাদী বৃত্তীয় গতি।</div>
+      </div>
+      <div class="section"><h3>প্রবাহবাহী তার ও সমান্তরাল তার</h3>
+        <div class="formula hot">\[\vec F=I(\vec\ell\times\vec B),\qquad F=BI\ell\sin\theta\]</div>
+        <div class="formula">\[\frac F\ell=\frac{\mu_0I_1I_2}{2\pi d}\]</div>
+        <div class="small">সমমুখী প্রবাহ → আকর্ষণ; বিপরীতমুখী → বিকর্ষণ।</div>
+      </div>
+      <div class="section"><h3>কারেন্ট লুপ ও চলন্ত-কয়েল গ্যালভেনোমিটার</h3>
+        <div class="formula">\[\vec\tau=\vec m\times\vec B,\qquad \tau=NIAB\sin\theta\]</div>
+        <div class="formula hot">\[m=NIA\]</div>
+      </div>
+    </div>
 
-<footer>WBCHSE Class 12 Physics • Semester 3 • Formula-first quick revision sheet</footer>
-</main>
+    <div>
+      <div class="section"><h3>Wheatstone ও মিটার ব্রিজ</h3>
+        <div class="formula hot">\[\frac PQ=\frac RS\]</div>
+        <div class="small">Wheatstone সেতুর সাম্য শর্ত।</div>
+        <div class="formula hot">\[\frac RS=\frac{\ell}{100-\ell}\]</div>
+      </div>
+      <div class="section"><h3>পোটেনশিওমিটার</h3>
+        <div class="formula hot">\[\frac{\varepsilon_1}{\varepsilon_2}=\frac{\ell_1}{\ell_2}\]</div>
+        <div class="formula">\[r=R\left(\frac{\ell_1}{\ell_2}-1\right)\]</div>
+        <div class="small">\(\ell_1\) = খোলা বর্তনীর সাম্য দৈর্ঘ্য; \(\ell_2\) = \(R\) যুক্ত অবস্থার সাম্য দৈর্ঘ্য।</div>
+      </div>
+      <div class="section"><h3>শক্তি ও তাপ</h3>
+        <div class="formula hot">\[P=VI=I^2R=\frac{V^2}{R},\qquad H=I^2Rt\]</div>
+      </div>
+      <div class="section"><h3>MCG</h3>
+        <div class="formula">\[\tau_{mag}=NIAB,\qquad \tau_{rest}=k\theta\]</div>
+        <div class="formula">\[\frac\theta I=\frac{NAB}{k}\]</div>
+        <div class="formula">\[R_v=\frac{V}{I_g}-G\]</div>
+        <div class="formula">\[S=\frac{GI_g}{I-I_g}\]</div>
+      </div>
+      <div class="section"><h3>দণ্ড চুম্বক</h3>
+        <div class="formula">\[M=m_p(2\ell)\]</div>
+        <div class="formula hot">\[B_a=\frac{\mu_0}{4\pi}\frac{2M}{r^3},\qquad B_e=\frac{\mu_0}{4\pi}\frac{M}{r^3}\]</div>
+        <div class="small">দূরবর্তী বিন্দুর জন্য।</div>
+        <div class="formula">\[\tau=MB\sin\theta,\qquad U=-MB\cos\theta\]</div>
+      </div>
+      <div class="section"><h3>পরিক্রমণরত ইলেক্ট্রন ও চৌম্বক দ্বিধ্রুব</h3>
+        <div class="formula">\[M_e=\frac{evr}{2},\qquad M_l=IA\]</div>
+      </div>
+      <div class="section"><h3>পৃথিবীর চৌম্বক ক্ষেত্র</h3>
+        <div class="formula">\[B_H=B\cos\delta,\qquad B_V=B\sin\delta\]</div>
+        <div class="formula">\[\tan\delta=\frac{B_V}{B_H},\qquad B=\sqrt{B_H^2+B_V^2}\]</div>
+      </div>
+      <div class="section"><h3>চৌম্বক পদার্থ</h3>
+        <div class="formula">\[B=\mu_0(H+M)=\mu H,\qquad \mu=\mu_0\mu_r\]</div>
+        <div class="formula">\[\chi=\frac MH,\qquad \mu_r=1+\chi\]</div>
+      </div>
+      <div class="section"><h2 class="chapter">৪. তড়িৎচৌম্বক আবেশ ও AC</h2><h3>চৌম্বক ফ্লাক্স ও ফ্যারাডে</h3>
+        <div class="formula hot">\[\Phi_B=\int\vec B\cdot d\vec A=BA\cos\theta\]</div>
+      </div>
+    </div>
+  </div>
+  <footer>পৃষ্ঠা ২</footer>
+</section>
+
+<section class="page">
+  <div class="running"><span>WBCHSE দ্বাদশ শ্রেণি | পদার্থবিদ্যা</span><span>সেমিস্টার-৩ | ২০২৬-২৭</span></div>
+  <div class="grid compact">
+    <div>
+      <div class="section"><h3>ফ্যারাডে - আবেশ</h3>
+        <div class="formula hot">\[\varepsilon=-N\frac{d\Phi_B}{dt}\]</div>
+        <div class="formula">\[\varepsilon_{rot}=NAB\omega\sin(\omega t)\]</div>
+        <div class="small">ঋণ চিহ্ন = লেঞ্জের নীতি।</div>
+      </div>
+      <div class="section"><h3>স্ব- ও পারস্পরিক আবেশ</h3>
+        <div class="formula hot">\[\varepsilon_L=-L\frac{dI}{dt},\qquad L=\frac{N\Phi}{I}\]</div>
+        <div class="formula">\[L=\mu_0\frac{N^2A}{\ell}\]</div>
+        <div class="formula">\[\varepsilon_2=-M\frac{dI_1}{dt},\qquad M=\frac{N_2\Phi_{21}}{I_1}\]</div>
+        <div class="formula">\[M_{co}=\mu_0\frac{N_1N_2A}{\ell}\]</div>
+        <div class="formula hot">\[U_B=\frac12LI^2,\qquad u_B=\frac{B^2}{2\mu_0}\]</div>
+      </div>
+      <div class="section"><h3>AC-এর মৌলিক সূত্র</h3>
+        <div class="formula hot">\[i=I_0\sin\omega t,\qquad \omega=2\pi\nu\]</div>
+        <div class="formula hot">\[I_{rms}=\frac{I_0}{\sqrt2},\qquad V_{rms}=\frac{V_0}{\sqrt2}\]</div>
+      </div>
+      <div class="section"><h3>প্রতিঘাত, ইম্পিড্যান্স ও অনুনাদ</h3>
+        <div class="formula">\[X_L=\omega L,\qquad X_C=\frac1{\omega C}=\frac1{2\pi\nu C}\]</div>
+      </div>
+      <h2 class="chapter">৫. তড়িৎচৌম্বক তরঙ্গ</h2>
+      <div class="section">
+        <div class="formula hot">\[c=\frac1{\sqrt{\mu_0\varepsilon_0}}\approx3\times10^8\;\mathrm{m\,s^{-1}}\]</div>
+        <div class="formula">\[v=\frac1{\sqrt{\mu\varepsilon}}=\frac{c}{\sqrt{\mu_r\varepsilon_r}}=\frac cn\]</div>
+        <div class="formula hot">\[\vec E\perp\vec B,\qquad B=\frac Ec\]</div>
+        <div class="formula">\[I_{avg}=\frac12\varepsilon_0cE_0^2=\frac{cB_0^2}{2\mu_0}\]</div>
+        <div class="formula">\[\lambda=\frac c\nu,\qquad \lambda=\frac{\lambda_0}{n}\]</div>
+        <div class="small">\(E\) ও \(B\) একই দশায় থাকে।</div>
+        <div class="formula">\[\lambda_{radio}>\lambda_{micro}>\lambda_{IR}>\lambda_{visible}>\lambda_{UV}>\lambda_X>\lambda_\gamma\]</div>
+        <div class="small">দৃশ্যমান আলো আনুমানিক 380-750 nm।</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section"><h3>LCR</h3>
+        <div class="formula hot">\[Z=\sqrt{R^2+(X_L-X_C)^2}\]</div>
+        <div class="formula">\[\tan\phi=\frac{X_L-X_C}{R},\qquad \cos\phi=\frac RZ\]</div>
+        <div class="formula hot">\[\nu_0=\frac1{2\pi\sqrt{LC}},\qquad \omega_0=\frac1{\sqrt{LC}}\]</div>
+        <div class="formula">\[Q_f=\frac{\omega_0L}{R}=\frac1R\sqrt{\frac LC}\]</div>
+      </div>
+      <div class="section"><h3>AC শক্তি ও দশা</h3>
+        <div class="formula hot">\[P=V_{rms}I_{rms}\cos\phi\]</div>
+        <div class="formula">\[Z=R,\qquad\phi=0^\circ\]</div>
+        <div class="formula">\[Z=X_L,\qquad\phi=90^\circ\]</div>
+        <div class="small">প্রবাহ \(I\), বিভব \(V\)-এর থেকে 90° পিছিয়ে থাকে।</div>
+        <div class="formula">\[Z=X_C,\qquad\phi=-90^\circ\]</div>
+        <div class="small">প্রবাহ \(I\), বিভব \(V\)-এর থেকে 90° এগিয়ে থাকে।</div>
+        <div class="note"><b>ওয়াটহীন প্রবাহ:</b> আদর্শ বিশুদ্ধ \(L\) বা \(C\)-তে \(\cos\phi=0\), তাই গড় শক্তি \(P=0\)।</div>
+      </div>
+      <div class="section"><h3>আদর্শ ট্রান্সফরমার ও LC দোলক</h3>
+        <div class="formula hot">\[\frac{V_s}{V_p}=\frac{N_s}{N_p}=\frac{I_p}{I_s}\]</div>
+        <div class="formula">\[\omega=\frac1{\sqrt{LC}},\qquad \nu=\frac1{2\pi\sqrt{LC}}\]</div>
+      </div>
+
+      <div class="section"><h2 class="chapter">গুরুত্বপূর্ণ একক ও মাত্রা</h2>
+        <table class="table">
+          <thead><tr><th>রাশি</th><th>একক</th><th>মাত্রিক সূত্র</th></tr></thead>
+          <tbody>
+            <tr><td>আধান \(q\)</td><td>C</td><td>\([AT]\)</td></tr>
+            <tr><td>ক্ষেত্র \(E\)</td><td>N/C বা V/m</td><td>\([MLT^{-3}A^{-1}]\)</td></tr>
+            <tr><td>বিভব \(V\)</td><td>V</td><td>\([ML^2T^{-3}A^{-1}]\)</td></tr>
+            <tr><td>তড়িৎ ফ্লাক্স \(\Phi_E\)</td><td>N m²/C</td><td>\([ML^3T^{-3}A^{-1}]\)</td></tr>
+            <tr><td>ধারকত্ব \(C\)</td><td>F</td><td>\([M^{-1}L^{-2}T^4A^2]\)</td></tr>
+            <tr><td>প্রবাহ \(I\)</td><td>A</td><td>\([A]\)</td></tr>
+            <tr><td>রোধ \(R\)</td><td>Ω</td><td>\([ML^2T^{-3}A^{-2}]\)</td></tr>
+            <tr><td>আপেক্ষিক রোধ \(\rho\)</td><td>Ω m</td><td>\([ML^3T^{-3}A^{-2}]\)</td></tr>
+            <tr><td>ক্ষমতা \(P\)</td><td>W</td><td>\([ML^2T^{-3}]\)</td></tr>
+            <tr><td>চৌম্বক ক্ষেত্র \(B\)</td><td>T</td><td>\([MT^{-2}A^{-1}]\)</td></tr>
+            <tr><td>চৌম্বক ফ্লাক্স \(\Phi_B\)</td><td>Wb</td><td>\([ML^2T^{-2}A^{-1}]\)</td></tr>
+            <tr><td>আবেশকত্ব \(L,M\)</td><td>H</td><td>\([ML^2T^{-2}A^{-2}]\)</td></tr>
+            <tr><td>প্রতিঘাত/ইম্পিড্যান্স</td><td>Ω</td><td>\([ML^2T^{-3}A^{-2}]\)</td></tr>
+            <tr><td>কুলম্ব ধ্রুবক \(k\)</td><td>N m²/C²</td><td>\([ML^3T^{-4}A^{-2}]\)</td></tr>
+            <tr><td>তড়িৎ দ্বিধ্রুব ভ্রামক \(p\)</td><td>C m</td><td>\([LTA]\)</td></tr>
+            <tr><td>চৌম্বক দ্বিধ্রুব ভ্রামক \(M\)</td><td>A m²</td><td>\([AL^2]\)</td></tr>
+            <tr><td>তরঙ্গ বেগ \(c\)</td><td>m/s</td><td>\([LT^{-1}]\)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer>পৃষ্ঠা ৩</footer>
+</section>
+
+<section class="page">
+  <div class="running"><span>WBCHSE দ্বাদশ শ্রেণি | পদার্থবিদ্যা</span><span>সেমিস্টার-৩ | ২০২৬-২৭</span></div>
+  <h2 class="chapter">দ্রুত পুনরাবৃত্তি</h2>
+  <div class="quick">
+    <div>
+      <div class="formula">\[F=k\frac{|q_1q_2|}{r^2}\]</div>
+      <div class="formula">\[V=\frac{kq}{r}\]</div>
+      <div class="formula">\[R=\rho\frac\ell A\]</div>
+      <div class="formula">\[B=\frac{\mu_0I}{2\pi r}\]</div>
+      <div class="formula">\[r=\frac{mv}{|q|B}\]</div>
+      <div class="formula">\[\varepsilon=-N\frac{d\Phi_B}{dt}\]</div>
+      <div class="formula">\[X_L=\omega L\]</div>
+      <div class="formula">\[\nu_0=\frac1{2\pi\sqrt{LC}}\]</div>
+    </div>
+    <div>
+      <div class="formula">\[E=\frac{k|q|}{r^2}\]</div>
+      <div class="formula">\[V=IR\]</div>
+      <div class="formula">\[P=VI=I^2R=\frac{V^2}{R}\]</div>
+      <div class="formula">\[F=BI\ell\sin\theta\]</div>
+      <div class="formula">\[\Phi_B=BA\cos\theta\]</div>
+      <div class="formula">\[Z=\sqrt{R^2+(X_L-X_C)^2}\]</div>
+      <div class="formula">\[X_C=\frac1{\omega C}\]</div>
+      <div class="formula">\[c=\frac1{\sqrt{\mu_0\varepsilon_0}}\]</div>
+    </div>
+  </div>
+  <h2 class="chapter" style="margin-top:18px">অতি গুরুত্বপূর্ণ শর্ত</h2>
+  <div class="note">
+    <b>ডাইইলেকট্রিক:</b> বিচ্ছিন্ন ব্যাটারি-তে \(Q\) স্থির; যুক্ত ব্যাটারি-তে \(V\) স্থির।<br>
+    <b>অক্ষীয়/বিষুবীয় চুম্বক:</b> দূরবর্তী বিন্দুর জন্য সূত্রগুলি ব্যবহার করো।<br>
+    <b>আদর্শ ট্রান্সফরমার:</b> \(V_s/V_p=N_s/N_p=I_p/I_s\)।<br>
+    <b>AC ক্ষমতা:</b> \(P=V_{rms}I_{rms}\cos\phi\)।
+  </div>
+  <footer>পৃষ্ঠা ৪</footer>
+</section>
+
+</div>
 </body>
 </html>
